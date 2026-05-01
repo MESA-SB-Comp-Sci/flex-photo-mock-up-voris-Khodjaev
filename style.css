@@ -45,8 +45,8 @@
   display: flex;
   padding: 20px 24px;
   gap: 4px;
-/*  */
-/*  */
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .header-title {
@@ -73,11 +73,10 @@
 .nav {
   background-color: #0F6E56;
   display: flex;
-  flex-direction: column; 
+  flex-direction: row; 
   padding: 10px 24px;
   gap: 20px;
-
-  /* add here */
+  justify-content: space-around;
 }
 
 .nav-link {
@@ -102,8 +101,7 @@
   display: flex;
   gap: 10px;
   color: white;
-  flex-direction: column;
-  align-items: center; 
+  flex-direction: row;
 }
 
 .hero-title {
@@ -131,8 +129,8 @@
 ---------------------------------------------------------------- */
 
 .main {
-  /* add here */
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   gap: 16px;
   padding: 20px;
   background-color: #f1efe8;
@@ -155,7 +153,7 @@
   flex-shrink: 0;
   border: 0.5px solid #D3D1C7;
   display: flex;
-  flex-direction: row;  
+  flex-direction: column;  
   gap: 10px;
 }
 
@@ -205,7 +203,7 @@
 .images {
   display: flex;
   flex: 1;
-  flex-direction: row; 
+  flex-direction: column; 
   gap: 12px;
 }
 
@@ -226,7 +224,7 @@
   font-size: 13px;
   color: #5F5E5A;
   text-align: center;
-  flex: 0;  
+  flex: 1;  
 }
 
 
@@ -243,7 +241,7 @@
   background-color: #1a1a2e;
   padding: 12px 24px;
   display: flex;
-  justify-content: center;   
+  justify-content: flex-start;   
   gap: 20px;
 }
 
@@ -327,8 +325,8 @@
 }
 
 .gallery-grid {
-  display: ???;
-  flex-wrap: ???;
+  display: flex;
+  flex-wrap: wrap;
   gap: ???;
   justify-content: ???;
 }
